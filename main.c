@@ -8,6 +8,7 @@ static int list_callback(void* data, int argc, char** argv, char** azColName) {
     static int index = 1;
     printf("%d. Name: %s, Height: %s, Info: %s\n",
         index++,
+        //Ternary Operator
         argv[0] ? argv[0] : "NULL",
         argv[1] ? argv[1] : "NULL",
         argv[2] ? argv[2] : "NULL");
@@ -17,9 +18,10 @@ static int list_callback(void* data, int argc, char** argv, char** azColName) {
 static int search_callback(void* data, int argc, char** argv, char** azColName) {
     if (argc > 0) {
         printf("Found user - Name: %s, Height: %s, Info: %s\n",
-            argv[0] ? argv[0] : "NULL",
-            argv[1] ? argv[1] : "NULL",
-            argv[2] ? argv[2] : "NULL");
+        //Ternary Operator
+        argv[0] ? argv[0] : "NULL",
+        argv[1] ? argv[1] : "NULL",
+        argv[2] ? argv[2] : "NULL");
     }
     return 0;
 }
